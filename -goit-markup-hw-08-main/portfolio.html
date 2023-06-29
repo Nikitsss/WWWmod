@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+     <!-- Шапка -->
+    <header class="header">
+      <div class="container header__section">
+        <nav class="header__nav">
+          <a class="header__logo logo link" href="./index.html"
+            >Web<span class="header__logo--black">Studio</span></a
+          >
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link nav__link--current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Kontakty</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact header-contack__list list">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:Info@example.com"
+              ><svg class="header-contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              Info@example.com</a
+            >
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+380961111111"
+              ><svg class="header-contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+              +48 11111111</a
+            >
+          </li>
+        </ul>
+        <button class="menu-open" data-menu-open>
+        <svg class="menu-burger" width="24" height="16">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        </button>
+      </div>
+      <div class="mob-menu flex is-hidden" data-menu>
+        <div>
+          <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link " href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link mob-menu-list__link--current" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="">Kontakty</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-list__down">
+          <a class="mob-menu-list__tell link" href="tel:+380961111111">
+            +48 11111111</a>
+          <a class="mob-menu-list__mail link" href="mailto:Info@example.com">Info@example.com</a>
+          <ul class="mob-menu-list__social list">
+            <li class="mob-menu-list__social-item">Instagram</li>
+            <li class="mob-menu-list__social-item">Twitter</li>
+            <li class="mob-menu-list__social-item">Facebook</li>
+            <li class="mob-menu-list__social-item">LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+      <!-- Основной контент -->
+    <main>
+      <section class="portfolio-section">
+        <div class="container">
+          <h1 hidden>Примеры работ</h1>
+          <ul class="portfolio-btn-list list">
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn" type="button">Wszystko</button>
+            </li>
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn" type="button">Strony internetowe</button>
+            </li>
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn" type="button">Aplikacje</button>
+            </li>
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn" type="button">Projekt</button>
+            </li>
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/our-people.jpg 1x,                   
+                    ./images/our-people-2x.jpg 2x
+                  "
+                  src="./images/our-people.jpg"
+                  alt="фото сотрудников"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+                </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Tech</h2>
+                <p class="portfolio-list-text">Strona internetowa</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/ball.jpg 1x,                   
+                    ./images/ball-2x.jpg 2x
+                  "
+                  src="./images/ball.jpg"
+                  alt="парни играют в баскетбол"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+                <div class="portfolio-border">
+                <h2 class="portfolio-list-title">
+                  Poster <span lang="en">New Orlean vs Golden Star</span> 
+                </h2>
+                <p class="portfolio-list-text">Projekt</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/seafood.jpg 1x,                   
+                    ./images/seafood-2x.jpg 2x
+                  "
+                  src="./images/seafood.jpg"
+                  alt="ресторан морепродуктов"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Restauracja <span lang="en">Seafood</span></h2>
+                <p class="portfolio-list-text">Aplikacja</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/headphone.jpg 1x,                   
+                    ./images/headphone-2x.jpg 2x
+                  "
+                  src="./images/headphone.jpg"
+                  alt="наушники"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Projekt <span lang="en">Prime</span></h2>
+                <p class="portfolio-list-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/2-box.jpg 1x,                   
+                    ./images/2-box-2x.jpg 2x
+                  "
+                  src="./images/2-box.jpg"
+                  alt="две коробки"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Projekt <span lang="en">Boxes</span></h2>
+                <p class="portfolio-list-text">Aplikacja</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/screen.jpg 1x,                   
+                    ./images/screen-2x.jpg 2x
+                  "
+                  src="./images/screen.jpg"
+                  alt="экран"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title"><span lang="en">Inspiration has no Borders</span</h2>
+                <p class="portfolio-list-text">Strona internetowa</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/book.jpg 1x,                   
+                    ./images/book-2x.jpg 2x
+                  "
+                  src="./images/book.jpg"
+                  alt="книга"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Wydanie <span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-list-text">Projekt</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/label.jpg 1x,                   
+                    ./images/label-2x.jpg 2x
+                  "
+                  src="./images/label.jpg"
+                  alt="бирка для чемодана"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title">Projekt <span lang="en">LAB</span></h2>
+                <p class="portfolio-list-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item border">
+              <div class="portfolio-description">
+                <img
+                  srcset="
+                    ./images/leptop.jpg 1x,                   
+                    ./images/leptop-2x.jpg 2x
+                  "
+                  src="./images/leptop.jpg"
+                  alt="ноутбук"
+                  width="450"
+                />
+                <div class="portfolio-overlay">
+                  <p class="portfolio-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh odio, interdum quis leo quis, consequat congue mi. Nullam eget ultrices nulla, nec pellentesque sem. Fusce vitae porttitor magna. Aliquam erat volutpat. Etiam ultrices dui non dolor vehicula, sed volutpat ligula pharetra. Proin a lobortis arcu, sed auctor quam. Fusce sed urna placerat, ultricies ante varius, interdum risus. Nam in convallis odio, eget hendrerit quam. Curabitur quis ipsum mi. Fusce ex dui, porttitor in eros eget, posuere pulvinar erat. Nunc efficitur magna id massa bibendum, sed volutpat lorem imperdiet.</p>
+                </div>
+              </div>
+              <div class="portfolio-border">
+                <h2 class="portfolio-list-title"><span lang="en">Growing Business</span></h2>
+                <p class="portfolio-list-text">Aplikacja</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+      
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__flex">
+            <div class="footer__contacts-flex">
+              <a class="footer__logo logo link" href="./index.html"
+                >Web<span class="footer__logo--white">Studio</span>
+              </a>
+              
+              <address class="footer-contact">
+                <ul class="footer-contact__list list">
+                  <li class="footer-contact__item">
+                    <a
+                      class="footer-contact__link footer-contact__address link"
+                      href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >m. Kijów, ulica Tarasa Shevchenka 26</a
+                    >
+                  </li>
+                  <li class="footer-contact__item">
+                    <a
+                      class="footer-contact__link link"
+                      href="mailto:Info@example.com"
+                      >Info@example.com</a
+                    >
+                  </li>
+                  <li class="footer-contact__item">
+                    <a class="footer-contact__link link" href="tel:+380961111111"
+                      >+48 11111111</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="social-section">
+              <p class="social-section__text">Dołąć się!</p>
+              <ul class="footer-list list">
+                <li class="footer-list__item">
+                  <a class="footer-list__link" href="">
+                    <svg class="footer-list__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="footer-list__item">
+                  <a class="footer-list__link" href="">
+                    <svg class="footer-list__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="footer-list__item">
+                  <a class="footer-list__link" href="">
+                    <svg class="footer-list__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="footer-list__item">
+                  <a class="footer-list__link" href="">
+                    <svg class="footer-list__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-submit">
+              <p class="footer-submit__text">Zapisz się do newslettera</p>
+              <div class="footer-submit__form">
+                <label class="footer-submit__label" for="submit-mail"></label>
+                <input class="footer-submit__input" type="email" name="submit-mail" id="submit-mail" placeholder="E-mail">
+                <button class="footer-submit__btn" type="submit">Subskrybuj</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
